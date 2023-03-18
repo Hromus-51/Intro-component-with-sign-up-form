@@ -1,0 +1,10 @@
+body {
+    font-family: Poppins;
+    font-size: 16px;
+
+    background: #FF7979 url('../../assets/image/bg-intro-desktop.png') 0 0 / 100% auto no-repeat;
+
+    @media (max-width:425px) {
+        background: #FF7979 url('../../assets/image/bg-intro-mobile.png') 0 0 / 100% auto no-repeat;
+    }
+}

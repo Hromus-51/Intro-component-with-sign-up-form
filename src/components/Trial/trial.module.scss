@@ -1,0 +1,92 @@
+.trial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+
+    @media (max-width:425px) {
+        height: auto;
+        display: block;
+        padding: 88px 0px;
+    }
+
+    .container {
+        max-width: 1158px;
+        padding: 0 24px;
+
+        .content {
+            display: flex;
+            column-gap: 45px;
+            align-items: center;
+
+            @media (max-width:425px) {
+                display: block;
+            }
+
+            .titleText {
+                flex: 0.47 0 525px;
+                color: #FFFFFF;
+
+                .title {
+                    font-size: 50px;
+                    font-weight: 700;
+                    line-height: 55px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 34px;
+                    }
+
+                    @media (max-width:425px) {
+                        font-size: 28px;
+                        line-height: 36px;
+
+                        &:not(:last-child) {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+
+                .subtitle {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26px;
+                }
+
+                @media (max-width:425px) {
+                    text-align: center;
+
+                    &:not(:last-child) {
+                        margin-bottom: 64px;
+                    }
+                }
+            }
+
+            .trialForm {
+                flex: 0.48 0 540px;
+
+                .offerPlate {
+                    width: 100%;
+                    padding: 17px;
+
+                    text-align: center;
+                    color: #FFFFFF;
+                    font-size: 15px;
+                    font-weight: 400;
+
+                    background: #5E54A4;
+                    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+                    border-radius: 10px;
+
+                    .offerSpan {
+                        font-weight: 700;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
